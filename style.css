@@ -125,54 +125,51 @@ footer {
     font-size: 14px;
 }
 
-/* Responsiveness */
+/* ========================= */
+/* ==== RESPONSIVE CSS ==== */
+/* ========================= */
 @media (max-width: 768px) {
-    /* Grid jadi satu kolom */
-    main section {
-        display: block;
-    }
-
-    /* Hapus garis pemisah di kolom kiri */
-    main section > div:first-child {
-        border-right: none !important;
-        padding-right: 0 !important;
-        padding-bottom: 20px;
-    }
-
-    main section > div:last-child {
-        padding-left: 0 !important;
-    }
-
-    /* Gambar galeri responsif */
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    /* Responsive video iframe */
-    iframe {
-        width: 100% !important;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    /* Navigasi mobile */
     nav {
         text-align: center;
+        padding: 10px;
     }
 
     nav a {
-        display: inline-block;
-        margin: 8px 10px;
-    }
-
-    /* Padding dan font-size header disesuaikan */
-    header {
-        padding: 30px 15px;
+        display: block;
+        margin: 10px 0;
     }
 
     header h1 {
         font-size: 22px;
     }
-}
 
+    .form-container {
+        padding: 20px;
+        margin: 20px 10px;
+    }
+
+    form table {
+        border-spacing: 10px;
+    }
+
+    form td {
+        display: block;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="datetime-local"],
+    select,
+    input[type="file"],
+    textarea {
+        font-size: 16px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
