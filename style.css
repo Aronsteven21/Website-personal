@@ -124,3 +124,55 @@ footer {
     margin-top: 50px;
     font-size: 14px;
 }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    /* Grid jadi satu kolom */
+    main section {
+        display: block;
+    }
+
+    /* Hapus garis pemisah di kolom kiri */
+    main section > div:first-child {
+        border-right: none !important;
+        padding-right: 0 !important;
+        padding-bottom: 20px;
+    }
+
+    main section > div:last-child {
+        padding-left: 0 !important;
+    }
+
+    /* Gambar galeri responsif */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Responsive video iframe */
+    iframe {
+        width: 100% !important;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Navigasi mobile */
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+
+    /* Padding dan font-size header disesuaikan */
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+
