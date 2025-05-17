@@ -1,0 +1,126 @@
+/* Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigasi */
+nav {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    padding: 15px 30px;
+    text-align: left;
+}
+
+nav a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Form Container */
+.form-container {
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #4b6cb7;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Tabel Form */
+form table {
+    width: 100%;
+    border-spacing: 15px;
+}
+
+form td {
+    vertical-align: top;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="datetime-local"],
+select,
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #4b6cb7;
+    outline: none;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Buttons */
+button,
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4b6cb7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #35477d;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    font-size: 14px;
+}
